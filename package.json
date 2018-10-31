@@ -1,0 +1,24 @@
+{
+  "name": "FabiClubb",
+  "version": "1.0.0",
+  "description": "![my face](https://media.licdn.com/dms/image/C4E03AQGeXeHQcJNl0w/profile-displayphoto-shrink_200_200/0?e=1546473600&v=beta&t=l1YTiid7CyOnu_54qqqm-U9ZcL_yWSC8fIEw0sJzAZg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clubbfabiane/savvy-coder-portfolio-fabi.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/clubbfabiane/savvy-coder-portfolio-fabi/issues"
+  },
+  "homepage": "https://github.com/clubbfabiane/savvy-coder-portfolio-fabi#readme",
+  "devDependencies": {
+    "eslint": "^5.8.0",
+    "parcel-bundler": "^1.10.3"
+  }
+}
