@@ -1,9 +1,19 @@
 body {
-    background-color: green;
+    background-color:#cccccc;
     color: teal;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: italic;
-    margin: 0;
+    margin: 0; 
+    display: grid;
+        grid-template-columns: 15% auto;
+        grid-template-rows: min-content auto min-content;
+        grid-template-areas: 
+            "navigation header"
+            "navigation content"
+            "navigation footer";
+}
+
+h1{
+    font-family: 'Pacifico', cursive;
 }
 
 .container {
@@ -12,16 +22,25 @@ body {
     width: 90%;
    }
 
+   #navigation ul{
+       display: flex;
+       justify-content: space-around;
+       align-items: center;
+       flex-direction: column;
+       flex-wrap: wrap;
+       padding: 0;
+   }
+
 #navigation {
     background-color: #cccccc;
-    position: fixed;
-    width: 100vw;
-    top: 10px;
-    left: 0;
+    position: sticky;
+    grid-area: navigation;
+    top:0;  
 }
 
 #navigation>ul>li {
     display: inline;
+    margin: 10px;
     position:relative;
 }
 
@@ -38,26 +57,37 @@ body {
  {
     display: block;
 }
+@media(min-width: 750px){
+    body{
+        grid-template-columns: 15% auto;
+        grid-template-rows: min-content auto min-content;
+        grid-template-areas: 
+            "navigation header"
+            "navigation content"
+            "navigation footer";
+}
 
 #footer {
     background-color:#fff;
+    grid-area: footer;
 }
 
 #footer>ul>li {
-    background-color: purple;
+    background-color: darkgray;
 }
 
 #content {
-    background-color: red;
+    background-color: #fff;
     padding: 20px;
+    grid-area: content;
 }
 
 div.container {
-    background-color: violet;
+    background-color: teal;
 }
 
 div.container {
-    background-color: papayawhip;
+    background-color: grey;
 }
 
 img {
@@ -69,6 +99,7 @@ img {
 
 #header {
     background-color: tomato;
+    grid-area: header;
 }
 
 #navigation li:first-child {
