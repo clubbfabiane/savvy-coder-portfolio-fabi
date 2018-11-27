@@ -1,4 +1,4 @@
-body {
+#root {
     background-color:#cccccc;
     color: teal;
     font-style: italic;
@@ -58,7 +58,7 @@ h1{
     display: block;
 }
 @media(min-width: 750px){
-    body{
+    #root{
         grid-template-columns: 15% auto;
         grid-template-rows: 40vh auto min-content;
         grid-template-areas: 
